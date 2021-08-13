@@ -1,0 +1,118 @@
+@import 'buttons.css';
+
+body
+{
+    background-color: rgb(20, 20, 20);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.wrapper
+{
+    max-inline-size: 800px;
+    margin: auto;
+}
+
+.player
+{
+    margin-block-start: 50px;
+    position: relative;
+    border: 1px solid #fff;
+}
+
+.player video
+{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.player__title
+{
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+}
+
+.player__actions
+{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.player__progress
+{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+}
+
+.player__progress input
+{
+    flex: 1;
+    cursor: pointer;
+}
+
+.progress 
+{
+    -webkit-appearance: none;
+    border-radius: 10px;
+    height: 8px;
+    box-shadow: inset 0 0 4px #000;
+}
+
+.progress::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    border: 4px solid #222;
+}
+
+.player__overlay
+{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.player:hover .player__overlay
+{
+    opacity: 1;
+}
+
+.info
+{
+    margin-top: 30px;
+}
+
+p
+{
+    color: #fff;
+    text-align: right;
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+a
+{
+    color: #750D37;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #750D37;
+}
